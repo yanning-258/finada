@@ -10,6 +10,16 @@ import pandas as pd
 URL_SUF = "https://api.binance.com/api/v3/ticker/24hr?symbol="
 SYMBOLS =  ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'ADAUSDT', 'SOLUSDT']
 
+"""
+BINANCE:
+# Get current price for one coin
+url = "https://api.binance.com/api/v3/ticker/24hr?symbol=BTCUSDT"
+
+# Get historical data (klines/candlesticks)
+url = "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=7"
+"""
+
+
 #fetch price info for symbols
 data_list = []
 for symbol in SYMBOLS:
